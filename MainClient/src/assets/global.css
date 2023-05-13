@@ -1,30 +1,4 @@
-<template>
-    <div id="login-container">
-        <h1>Login</h1>
-        <form action="">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha">
-            <a href=""><input type="submit" value="Login"></a>
-        </form>
 
-        <div id="register-container">
-            <p>Ainda não tem uma conta?</p>
-            <a href="">Criar uma conta</a>
-        </div>
-    </div>
-</template>
-  
-<script>
-    export default{
-        
-}
-</script>
-
-
-
-<style scoped>
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +24,7 @@ a:hover {
     color: #4ea3d9;
 }
 
-#login-container {
+.login-container {
     background-color: #ffffff;
     width: 400px;
     margin-left: auto;
@@ -106,10 +80,10 @@ input[type="submit"]:hover {
 
 
 
-#register-container p {
+.register-container p {
     margin-bottom: 10px;
 }
 
 a {
     text-decoration: none;
-}</style>
+}

@@ -1,5 +1,5 @@
 <script>
-    import '../assets/global.css'
+import '../assets/global.css'
 </script>
 
 <template class="bacground">
@@ -10,17 +10,17 @@
             <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
             <label for="password">Senha</label>
             <input type="password" name="password" id="password" placeholder="Digite sua senha">
-            <a href=""><input type="submit" value="Login"></a>
+            <RouterLink to = "/home">
+                <input type="submit" value="Login"></RouterLink>
         </form>
-  
+
         <div id="register-container">
             <p>Ainda não tem uma conta?</p>
             <RouterLink class="link" to="/register">Criar conta</RouterLink>
         </div>
     </div>
-  </template>
+</template>
   
-  <style scoped>
-  </style>
+<style scoped></style>
   
   

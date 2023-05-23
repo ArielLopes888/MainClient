@@ -25,6 +25,16 @@ const router = createRouter({
       component: () => import('../views/FindPeopleView.vue')
     },
     {
+      path: '/localization',
+      name: 'localization',
+      component: () => import('../views/LocalizationView.vue')
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../views/ProfileView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting

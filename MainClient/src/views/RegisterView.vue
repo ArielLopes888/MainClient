@@ -1,6 +1,6 @@
 <script>
 import '../assets/global.css';
-import RegisterService from '../services/RegisterService';
+import RegisterService from '../services/ViewServices/RegisterService';
 
 export default {
     data() {

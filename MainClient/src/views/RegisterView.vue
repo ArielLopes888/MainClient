@@ -38,6 +38,9 @@ export default {
 </script>
 
 <template class="background">
+    <head>
+        <title>Cadastro</title>
+    </head>
     <div id="login-register-container">
         <h1>Cadastre-se</h1>
         <form @submit="handleSubmit">

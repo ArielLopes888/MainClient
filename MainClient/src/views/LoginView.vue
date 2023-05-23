@@ -35,6 +35,9 @@ export default {
 </script>
 
 <template class="bacground">
+    <head>
+        <title>Login</title>
+    </head>
     <div id="login-register-container">
         <h1>Login</h1>
         <form @submit="handleSubmit">
@@ -42,8 +45,8 @@ export default {
             <input type="email" name="email" id="email" placeholder="Digite seu e-mail" v-model="email" autocomplete="off">
 
             <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha" v-model="password" >
-           
+            <input type="password" name="password" id="password" placeholder="Digite sua senha" v-model="password">
+
             <a href=""><input type="submit" value="Login"></a>
         </form>
 

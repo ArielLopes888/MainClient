@@ -4,7 +4,7 @@ import '../assets/global.css'
 import SidebarComponent from '../components/SidebarComponent.vue';
 </script>
 
-<template class="bacground">
+<template class="background">
     <SidebarComponent />
     <div class="centered-content">
         <h1>HOME</h1>

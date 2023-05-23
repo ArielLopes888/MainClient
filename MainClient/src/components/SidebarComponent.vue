@@ -22,7 +22,7 @@ export default {
             options: [
                 { id: 1, label: 'Encontrar Pessoas', route: '/findpeople' },
                 { id: 2, label: 'Meus Encontros', route: '/opcao2' },
-                { id: 3, label: 'Perfil', route: '/opcao3' }
+                { id: 3, label: 'Perfil', route: '/profile' }
             ]
         };
     },

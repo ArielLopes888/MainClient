@@ -1,30 +1,34 @@
 <script>
-import FindPeopleService from '../services/FindPeopleService'
+import '../assets/global.css'
+import FindPeopleService from '../services/ViewServices/FindPeopleService';
+import SidebarComponent from '../components/SidebarComponent.vue';
 
 const { GetAll } = new FindPeopleService();
 
 export default {
-  data() {
-    return {
-      allUsers: []
-    }
-  },
-  mounted() {
-    GetAll()
-      .then(response => {
-        if (response && Array.isArray(response.data) && response.data.length > 0) {
-          this.allUsers = response.data;
-        } else {
-          console.error('A resposta da API está vazia ou não é um array.');
-        }
-      });
-  }
-
+    data() {
+        return {
+            allUsers: []
+        };
+    },
+    mounted() {
+        GetAll()
+            .then(response => {
+            if (response && Array.isArray(response.data) && response.data.length > 0) {
+                this.allUsers = response.data;
+            }
+            else {
+                console.error("A resposta da API está vazia ou não é um array.");
+            }
+        });
+    },
+    components: { SidebarComponent }
 }
 
 </script>
 
 <template class="background">
+  <SidebarComponent />
   <article>
     <table class="custom-table">
       <thead>
@@ -43,9 +47,7 @@ export default {
   </article>
 </template>
 <style>
-#background{
-  background-color: rgb(12, 185, 237);
-}
+
 .custom-table {
   width: 100%;
   border-collapse: separate;
